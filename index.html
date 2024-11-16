@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<div  class="container">
+      <div class="title">Contact Us </div>
+    <form action="#" name="formfil" id="form" >
+       
+        <div class="name-box">
+           <div class="first-n">
+            <label for="fname" >First Name</label >
+            <input type="text" name="fname" id="first-name" >
+             <p id="result" class="hidden">This field is required </p>
+           </div>
+       
+           <div class="last-n">
+            <label for="lname">Last Name </label>
+            <input type="text" name="lname" id="last-name">
+             <p id="result" class="hidden">This field is required</p>
+           </div>
+        </div>
+    
+        <div class="email-box">
+            <label for="email"> Email Address  </label>
+            <input type="email"  name="mail" id="email" >
+             <p id="result" class="hidden" style="position:absolute; margin-top: 55px;"> Please enter a valid email address</p>
+        </div>
+
+        <div class="query-box">
+            <label for="query">Query Type  </label>
+            <div class="type"><input type="radio" id="query" name="choix" >General Enquiry </div>
+            <div class="type"><input type="radio" id="query" name="choix" >Support Request  </div>
+              <p id="result" class="hidden" style="position:absolute; margin-top: 55px;">Please select a query type</p>
+        </div>
+
+        <div class="messag-box">
+            <label for="message"> Message</label> 
+            <textarea name="text" id="message"> </textarea>
+              <p id="result" class="hidden">This field is required</p>
+        </div>
+        <div class="consent">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I consent to being contacted by the team </label>
+              <p id="result" class="hidden">To submit this form, please consent to being contacted</p>
+        </div>
+    
+        <div class="submit-box">
+             <input type="submit" class="sub">
+        </div>
+    </form>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
